@@ -1,0 +1,96 @@
+:root {
+  --brown: #6b4b33;
+  --beige: #ddcfb4;
+  --grey: #c4c4c4;
+  --taupe: #b99d86;
+  --pink: #f0c7c9;
+
+  --text: #2f2119;
+  --card: rgba(221, 207, 180, 0.6);
+  --stroke: rgba(107, 75, 51, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+}
+
+main {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.citron {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+}
+
+.forhandlere {
+  margin-top: 1.5rem;
+}
+
+.forhandlere-card {
+  background: var(--card);
+  border: 1px solid var(--stroke);
+  border-radius: 18px;
+  padding: clamp(18px, 3vw, 34px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.forhandlere-kicker {
+  margin: 0 0 1rem;
+  font-family: "Oswald", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brown);
+}
+
+.forhandlere-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Vollkorn", Georgia, serif;
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+}
+
+.forhandlere-list li {
+  padding: 0.85rem 0.25rem;
+  border-top: 1px solid rgba(47, 33, 25, 0.12);
+}
+
+.forhandlere-list li:first-child {
+  border-top: none;
+}
+
+.forhandlere-list li:hover {
+  transform: translateX(4px);
+  transition: 160ms ease;
+}
+
+.body_style {
+  background-color: #d9ccad;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  background-color: #f5deb8;
+  font-size: 30px;
+
+  font-family: "Oswald", system-ui;
+  align-items: center;
+  gap: 270px;
+}
